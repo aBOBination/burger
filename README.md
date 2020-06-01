@@ -1,16 +1,22 @@
-# Node Express Handlebars
+# Bob's Burger App
 
 ### Overview
 
-In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
+This app is a simple burger eating app.  It is build using an MVP model using Node, Express, Handlebars, and MySQL.
 
-### Read This
+### Current Version
 
-When trying to connect remotely to your Heroku database on an open network such as a coffee shop, library, or even your University WiFi, it will be blocked. If you are experiencing a Heroku connection error, this could be why.
+https://bobs-burgers-bootcamp.herokuapp.com/
 
-### Important
+The above is the reult of this repo.
 
-* **This assignment must be deployed.** Be sure to utilize the [MYSQL Heroku Deployment Guide](../../03-Supplemental/MySQLHerokuDeploymentProcess.pdf) in order to deploy your assignment.
+### Development
+
+In order to deploy this locally you will need pull down the repo.
+
+Next, you need to set up your local DB in MySQL usingm the schema and seed in the `/db` directory.
+
+Next, you will need to do a `npm install` in order to get all the modules.
 
 ### Before You Begin
 
