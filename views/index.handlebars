@@ -1,1 +1,46 @@
-<h1>{{}}</h1>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-center">Bob's Burger Devouring App</h1>
+    <p class="lead text-center">This is an example of using the MVC model in Node JS.</p>
+  </div>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col sections">
+     <h2>Burgers ready for consumption!</h2>
+      <ul class="burger-undevoured">
+        <i class="fas fa-hamburger"></i>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=devoured}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-3 sections">
+
+      <h2>Add a Burger</h2>
+      <form class="create-form text-center">
+        <div class="form-group">
+          <label for="burger-name">New Burger:</label>
+          <input type="text" id="burger-name" name="name">
+          <button class="btn btn-success btn-sm" type="submit">Add Burger</button>
+        </div>
+      </form>
+      <img src="./assets/images/burger.jpg">
+    </div>
+    <div class="col sections">
+      <h2>Burgers consumed!</h2>
+        <ul>
+          {{#each burgers}}
+            {{#if devoured}}
+              {{> burgers/burger-block devoured=devoured}}
+            {{/if}}
+          {{/each}}
+        </ul>
+    </div>
+  </div>
+</div>

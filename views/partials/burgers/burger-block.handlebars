@@ -1,0 +1,18 @@
+<li>
+	{{burger_name}}
+
+	<button
+	{{#if devoured}}
+		class="burger-status btn btn-outline-danger btn-sm"
+	{{else}}
+		class="burger-status btn btn btn-success btn-sm"
+	{{/if}}
+		data-id="{{id}}"
+		data-devoured="{{devoured}}">
+	{{#if devoured}}
+		DELETE!
+	{{else}}
+		Devour it!
+	{{/if}}
+	</button>
+</li>

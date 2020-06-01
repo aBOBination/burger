@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+img {
+  margin-top: 1rem;
+  max-width: 100%;
+  opacity: 70%;
+}
+
+ul {
+  max-width: fit-content;
+  margin: auto;
+}
+
+li {
+  margin: 1rem;
+  list-style-image: url('../images/burger-bullet-icon.png');
+}
+
+.sections h2 {
+  font-family: 'Architects Daughter', cursive;
+  margin-bottom: 3rem;
+  text-align: center;
+}
