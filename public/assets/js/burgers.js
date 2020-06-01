@@ -27,18 +27,20 @@ $(function () {
 
   $('.create-form').on('submit', function (event) {
     event.preventDefault();
-
-    var newBurger = {
-      burger_name: $('#burger-name').val().trim(),
-      devoured: 0,
-    };
-    console.log(newBurger);
-    $.ajax('/api/burger', {
-      type: 'POST',
-      data: newBurger,
-    }).then(function () {
-      console.log('Added a new burger.  Ready for consumption.');
-      location.reload();
-    });
+    userBurger = $('#burger-name').val().trim();
+    if (userBurger) {
+      var newBurger = {
+        burger_name: userBurger,
+        devoured: 0,
+      };
+      console.log(newBurger);
+      $.ajax('/api/burger', {
+        type: 'POST',
+        data: newBurger,
+      }).then(function () {
+        console.log('Added a new burger.  Ready for consumption.');
+        location.reload();
+      });
+    }
   });
 });
