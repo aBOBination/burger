@@ -4,7 +4,8 @@
   <div class="container">
     <h1 class="display-4 text-center">Bob's Burger's</h1>
     <p class="lead text-center">This is an example of using the MVC model in Node, Express, and MySQL.</p>
-    <p class="github text-center">Github</p>
+    <p class="text-center"><a target="_blank" href="https://github.com/aBOBination/burger" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true"><i class="fa fa-github-square">  Github</i></a></p>
+
   </div>
 </div>
 <div class="container-fluid mt-5">
@@ -12,7 +13,6 @@
     <div class="col sections">
      <h2>Burgers to eat!</h2>
       <ul class="burger-undevoured">
-        <i class="fas fa-hamburger"></i>
         {{#each burgers}}
           {{#unless devoured}}
             {{> burgers/burger-block devoured=devoured}}
