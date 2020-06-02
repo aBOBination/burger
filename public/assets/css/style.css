@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 img {
+  display: block;
   margin-top: 1rem;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 70%;
 }
 
@@ -14,6 +17,10 @@ ul {
 li {
   margin: 1rem;
   list-style-image: url('../images/burger-bullet-icon.png');
+}
+
+.sections {
+  margin-bottom: 3rem;
 }
 
 .sections h2 {

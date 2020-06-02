@@ -9,7 +9,20 @@
 </div>
 <div class="container-fluid mt-5">
   <div class="row">
-    <div class="col sections">
+    <div class="col-12 sections">
+      <h2>Add a Burger!</h2>
+      <form class="create-form text-center">
+        <div class="form-group">
+          <label for="burger-name">New Burger:</label>
+          <input type="text" id="burger-name" name="name">
+          <button class="btn btn-success btn-sm" type="submit">Add Burger</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-4 order-md-1 sections">
      <h2>Burgers to eat!</h2>
       <ul class="burger-undevoured">
         {{#each burgers}}
@@ -19,18 +32,8 @@
         {{/each}}
       </ul>
     </div>
-    <div class="col-3 sections">
-      <h2>Add a Burger!</h2>
-      <form class="create-form text-center">
-        <div class="form-group">
-          <label for="burger-name">New Burger:</label>
-          <input type="text" id="burger-name" name="name">
-          <button class="btn btn-success btn-sm" type="submit">Add Burger</button>
-        </div>
-      </form>
-      <img src="./assets/images/burger.jpg">
-    </div>
-    <div class="col sections">
+
+    <div class="col-12 col-md-4 order-md-3 sections">
       <h2>Burgers consumed!</h2>
         <ul>
           {{#each burgers}}
@@ -39,6 +42,9 @@
             {{/if}}
           {{/each}}
         </ul>
+    </div>
+    <div class="col-12 col-md-4 order-md-2 sections">
+      <img src="./assets/images/burger.jpg">
     </div>
   </div>
 </div>
